@@ -27,7 +27,7 @@ function askForInput() {
 
 askForInput();
 
-process.on('SIGINT', () => {
+rl.on('SIGINT', () => {
   console.log('\nGoodbye! Thank you for using the program.');
   rl.close();
   process.exit(0);
